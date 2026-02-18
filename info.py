@@ -46,8 +46,8 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1003525105249')
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1003812511582'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1001572271892')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1003781179391').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '')  # Request channel id (make sure bot is admin)
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1003219334269')  # Support group id (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003749791880')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-100').split()]
 MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-100').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
@@ -69,8 +69,8 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "yato")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Lucy_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "kally")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kally_files')
 
 # ============================
 # Movie Notification & Update Settings
@@ -91,19 +91,19 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_to_Download_7x/30
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'inshorturl.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arolinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'd9e2ed76f4f30e39ccefc3455e5a8811a33cbe2f')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_Download_7x/30')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie7xchat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/nova_flix')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/cosmic_freak')
-MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/nova_flix')
-OWNERID = int(os.environ.get('OWNERID', '6497757690'))  # Replace with the actual admin ID
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/infinityaudiosearchinggroup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/storyupdatechannel')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/hdfilm0900_bot')
+MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/storyupdatechannel')
+OWNERID = int(os.environ.get('OWNERID', '6821867898'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
